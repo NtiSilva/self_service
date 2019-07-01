@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  descricao: MyString
+  adicionais: MyString
+  categoria: MyString
+  tempo_preparo: 2019-06-30 20:02:17
+  preco: 1.5
+  foto: MyString
+
+two:
+  nome: MyString
+  descricao: MyString
+  adicionais: MyString
+  categoria: MyString
+  tempo_preparo: 2019-06-30 20:02:17
+  preco: 1.5
+  foto: MyString

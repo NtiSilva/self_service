@@ -1,0 +1,52 @@
+<%= form_with(model: cardapio, local: true) do |form| %>
+  <% if cardapio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cardapio.errors.count, "error") %> prohibited this cardapio from being saved:</h2>
+
+      <ul>
+      <% cardapio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adicionais %>
+    <%= form.text_field :adicionais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tempo_preparo %>
+    <%= form.time_select :tempo_preparo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :preco %>
+    <%= form.text_field :preco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_field :foto %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

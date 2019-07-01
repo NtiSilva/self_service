@@ -1,0 +1,8 @@
+ default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 1234
+ development:
+  <<: *default
+  database: self_serv_development

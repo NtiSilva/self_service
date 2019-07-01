@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  tempo_entrega: 2019-06-30 20:00:32
+  restaurante: one
+
+two:
+  status: MyString
+  tempo_entrega: 2019-06-30 20:00:32
+  restaurante: two
